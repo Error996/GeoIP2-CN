@@ -46,15 +46,15 @@ jobs:
       run: |
         awk 'FNR==1{print ""}{print}' dist/*.txt > dist/merge.txt
         awk '!seen[$0]++' dist/merge.txt > dist/CN-ip-cidr.txt
-        echo "10.0.0.0/8" >> dist/CN-ip-cidr.txt
-        echo "172.16.0.0/12" >> dist/CN-ip-cidr.txt
-        echo "192.168.0.0/16" >> dist/CN-ip-cidr.txt
 
     - name: Generate GeoIP2 database
       run: |
         CURRENT_DIR=$(pwd)
         cd dist
         ./ipip2mmdb -s ./CN-ip-cidr.txt -d Country.mmdb
+        echo "10.0.0.0/8" >> ./CN-ip-cidr.txt
+        echo "172.16.0.0/12" >> ./CN-ip-cidr.txt
+        echo "192.168.0.0/16" >> ./CN-ip-cidr.txt
         cd $CURRENT_DIR
 
     - name: Push artifacts to release branch
