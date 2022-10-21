@@ -46,6 +46,9 @@ jobs:
       run: |
         awk 'FNR==1{print ""}{print}' dist/*.txt > dist/merge.txt
         awk '!seen[$0]++' dist/merge.txt > dist/CN-ip-cidr.txt
+        echo "10.0.0.0/8" >> dist/CN-ip-cidr.txt
+        echo "172.16.0.0/12" >> dist/CN-ip-cidr.txt
+        echo "192.168.0.0/16" >> dist/CN-ip-cidr.txt
 
     - name: Generate GeoIP2 database
       run: |
