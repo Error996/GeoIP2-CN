@@ -5,7 +5,7 @@
 
 仅仅增加了局域网ip段
 
-原始项目点我[Hackl0us/GeoIP2-CN](https://github.com/Hackl0us/GeoIP2-CN)
+原始项目详见： [Hackl0us/GeoIP2-CN](https://github.com/Hackl0us/GeoIP2-CN)
 
 ## 🔖 项目背景
 目前市面上绝大多数的代理工具都依赖于 GeoIP2 数据库判断地址所属地。它们的规则结尾部分一般都会有一条类似 `GEOIP, CN`，用来查询目的 IP 地址是否属于中国大陆，从而判断是否直连。
