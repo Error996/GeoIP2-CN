@@ -1,7 +1,9 @@
 ![](https://i.loli.net/2020/12/10/BW8HVtKTbISrPYv.png)
 
 # GeoIP2 · CN
-🇨🇳 小巧精悍、准确、实用 GeoIP2 数据库 🇨🇳
+🇨🇳 小巧精悍、准确、实用 GeoIP2 数据库 🇨🇳  
+仅仅增加了局域网ip段
+原始项目点我[Hackl0us/GeoIP2-CN](https://github.com/Hackl0us/GeoIP2-CN)
 
 ## 🔖 项目背景
 目前市面上绝大多数的代理工具都依赖于 GeoIP2 数据库判断地址所属地。它们的规则结尾部分一般都会有一条类似 `GEOIP, CN`，用来查询目的 IP 地址是否属于中国大陆，从而判断是否直连。
@@ -36,8 +38,8 @@ GeoIP2 数据库的大小仅为 100 KB 左右，对比原来庞大的数据库�
 ## 📥 下载链接
 | 📦 项目 | 📃 文件 | 🐙 GitHub RAW | 🚀 CDN 加速 | 🔧 适用范围
 |  :--:  |  :--:  |     :--:     |     :--:    | ---- |
-| IP-CIDR 列表 | CN-ip-cidr.txt | [点我下载](https://github.com/Hackl0us/GeoIP2-CN/raw/release/CN-ip-cidr.txt) | [点我起飞](https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/CN-ip-cidr.txt) | 防火墙、较老的代理工具等 |
-| GeoIP2 数据库 | Country.mmdb | [点我下载](https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb) | [点我起飞](https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb) | Surge, Shadowrocket,<br>QuantumultX, Clash<br>等较新的代理工具|
+| IP-CIDR 列表 | CN-ip-cidr.txt | [点我下载](https://github.com/Error996/GeoIP2-CN/raw/release/CN-ip-cidr.txt) | [点我起飞](https://cdn.jsdelivr.net/gh/Error996/GeoIP2-CN@release/CN-ip-cidr.txt) | 防火墙、较老的代理工具等 |
+| GeoIP2 数据库 | Country.mmdb | [点我下载](https://github.com/Error996/GeoIP2-CN/raw/release/Country.mmdb) | [点我起飞](https://cdn.jsdelivr.net/gh/Error996/GeoIP2-CN@release/Country.mmdb) | Surge, Shadowrocket,<br>QuantumultX, Clash<br>等较新的代理工具|
 
 对于网络状况良好、无污染的环境下，建议选择 GitHub RAW 的方式下载，因为可以第一获取到最新的资源，因为服务器在境外，可能下载响应时间和速度稍长，但因为文件小，所以通常问题不大。
 
