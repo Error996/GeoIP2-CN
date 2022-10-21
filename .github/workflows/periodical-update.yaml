@@ -86,4 +86,4 @@ jobs:
         force: true
 
     - name: Purge CDN Cache
-      run: curl ${{ secrets.CDN_URL }}
+      run: curl -w "%{http_code}\n" -o /dev/null ${{ secrets.CDN_URL }}
