@@ -2,7 +2,9 @@
 
 # GeoIP2 · CN
 🇨🇳 小巧精悍、准确、实用 GeoIP2 数据库 🇨🇳  
+
 仅仅增加了局域网ip段
+
 原始项目点我[Hackl0us/GeoIP2-CN](https://github.com/Hackl0us/GeoIP2-CN)
 
 ## 🔖 项目背景
